@@ -27,27 +27,27 @@ export default Butoon;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: "flex-end",
-    justifyContent: "flex-end",
+    // flex: 1,
+    // alignItems: "flex-end",
+    // justifyContent: "flex-end",
     width: "100%",
     padding: 10,
   },
   Butoon: {
-    width: "100%",
+    // width: "100%",
     // marginBottom:40,
-    borderRadius: 30,
-    // height:40,
+    borderRadius: 20,
+    height:40,
     justifyContent: "center",
     alignItems: "center",
   },
   text: {
-    fontSize: 25,
+    fontSize: 15,
     // paddingLeft:10,
     fontWeight: "500",
     // backgroundColor:'white',
     // textAlign:'center',
-    padding: 10,
+    // padding: 10,
     textTransform: "uppercase",
   },
 });

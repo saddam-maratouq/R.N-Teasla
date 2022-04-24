@@ -3,16 +3,27 @@ import React from 'react'
 import { carStyles }  from './carStyle'
 import Butoon from '../cutomButoon/Butoon'
 
-const CarItem = () => {
+
+
+
+
+const CarItem = ({cars}) => { 
+
+  const { name , image , tagline , taglineCTA} = cars
+  // console.log(name)  
+
   return (
     <View style={carStyles.carContainer}>
     <ImageBackground
-      source={require("../../assets/images/ModelS.jpeg")}
-      style={carStyles.image}
+      source={image} 
+      style={carStyles.image} 
     />
     <View style={carStyles.content}>
-      <Text style={carStyles.title}> Modal S </Text>
-      <Text style={carStyles.subTitle}> starting at $47.000 </Text>
+      <Text style={carStyles.title}> {name} </Text>
+      <Text style={carStyles.subTitle}> 
+      {tagline} {''}
+      <Text style={carStyles.tagunderline}>{taglineCTA}</Text> 
+      </Text> 
     </View> 
      
      <View style={carStyles.butoonContainer} >

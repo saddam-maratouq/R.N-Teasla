@@ -1,11 +1,11 @@
 
-import { StyleSheet } from 'react-native'
+import { StyleSheet , Dimensions } from 'react-native'
 
 
  export  const carStyles = StyleSheet.create({ 
     carContainer: {
         width: "100%",
-        height: "100%",
+        height: Dimensions.get('screen').height,
       },
       content: {
         marginTop: "30%",
@@ -20,16 +20,19 @@ import { StyleSheet } from 'react-native'
         fontSize: 16,
         color: "#5c5e62",
       },
+      tagunderline : {
+        textDecorationLine:'underline' 
+      },
       image: {
         width: "100%",
-        height: "100%",
-        position: "absolute",
-        resizeMode: "cover",
+        height: '100%',
+        resizeMode:'cover',
+        position: 'absolute',
       }, 
       butoonContainer : {
          position:'absolute',
-         bottom:30, 
-         width:'100%',
+         bottom:70, 
+         width:'100%', 
       }
 })
 
